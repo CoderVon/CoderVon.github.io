@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">JavaScript学习记录 | Von的备份站</title>
+  <title itemprop="name">使用Hexo+Github/码云建立博客并且更改自定义域名 | Von的备份站</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -223,90 +223,46 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">JavaScript学习记录</h1>
-            <p class="entry-census">hojun&nbsp;·&nbsp;2020-4-9&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+            <h1 class="entry-title">使用Hexo+Github/码云建立博客并且更改自定义域名</h1>
+            <p class="entry-census">Von&nbsp;·&nbsp;2020-4-9&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <h1 id="JavaScript学习"><a href="#JavaScript学习" class="headerlink" title="JavaScript学习"></a>JavaScript学习</h1><h2 id="javascript嵌入方式"><a href="#javascript嵌入方式" class="headerlink" title="javascript嵌入方式"></a>javascript嵌入方式</h2><ol>
-<li>通过\&lt;script>标签内直接内嵌，计较推荐内嵌到\<head><meta name="generator" content="Hexo 3.9.0">之间或者\后面</head></li>
-<li>导入外链的js文件，形同\<script type="text/javascript" src="路径+文件名">\</script></li>
-<li>行间事件，直接把js代码写入事件的简单操作（如鼠标点击移入等）中，形如\<input type="button" name id="button" onclick="JS代码"><h2 id="Javascript组成"><a href="#Javascript组成" class="headerlink" title="Javascript组成"></a>Javascript组成</h2></li>
+          <h1 id="使用Hexo-Github-码云建立博客并且更改自定义域名"><a href="#使用Hexo-Github-码云建立博客并且更改自定义域名" class="headerlink" title="使用Hexo+Github/码云建立博客并且更改自定义域名"></a>使用Hexo+Github/码云建立博客并且更改自定义域名</h1><p>本来没打算用hexo建博客的，整那么多博客也没啥用，不过刚才突然发现自己有一个无法备案的域名，想了想正好用来给GithubPages做自定义域名，毕竟域名都买了也不能浪费嘛。<br>说干就干，现在开始。</p>
+<hr>
+<h2 id="安装好node-js"><a href="#安装好node-js" class="headerlink" title="安装好node.js"></a>安装好node.js</h2><p>这个没什么好说的 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">点我进入官网</a>，下载完之后一直下一步就行了，windows记得配置好环境变量;</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>既然要搞Hexo博客，自然得下载Hexo。PowerShell打开输入命令就行了</p>
+<pre><code>    npm install -g hexo
+</code></pre><p>如果速度太慢，挂梯子或者用下条指令切换成国内淘宝团队做的镜像cnpm，cnpm基本可以完全代替npm了，淘宝镜像和官方现在是每10分钟同步一次。</p>
+<pre><code>    npm install -g cnpm --registry=http://registry.npm.taobao.org
+    cnpm install -g hexo
+</code></pre><h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2><p>命令行输入指令到需要建立博客的位置之后初始化hexo，接下来git会自动去clone hexo的本体和一个主题，如果报错了先去装个git并把环境变量配置好</p>
+<pre><code>    hexo init
+</code></pre><h2 id="运行Hexo"><a href="#运行Hexo" class="headerlink" title="运行Hexo"></a>运行Hexo</h2><p>输入下面的指令会弹出一个地址，通过这个地址就可以访问hexo博客了</p>
+<pre><code>    hexo s
+</code></pre><h2 id="部署到Github和码云上"><a href="#部署到Github和码云上" class="headerlink" title="部署到Github和码云上"></a>部署到Github和码云上</h2><p>首先在Github或者码云上建立一个空的仓库，仓库名字要和你的Github名字一摸一样。<br>接着回到hexo的根目录，打开_config.yml文件，修改其中的deploy的内容</p>
+<pre><code>    deploy:
+    type: git
+    repo:
+    github: https://github.com/CoderVon/CoderVon.github.io.git,master
+    gitee: https://gitee.com/codervon/CoderVon.gitee.io.git,master
+</code></pre><p>如果习惯用ssh可以把链接改成ssh的，分支如果不填写的话默认也是master;<br><br>接下来就是输入指令部署就可以了</p>
+<pre><code>    hexo d
+</code></pre><p>等部署完成以后，就可以通过  yourname.github.io  / yourname.gitee.io来访问hexo博客了；</p>
+<h2 id="更改自定义域名"><a href="#更改自定义域名" class="headerlink" title="更改自定义域名"></a>更改自定义域名</h2><p>如果你没有云服务器又想用自己的域名来访问博客的话，就需要去进行域名解析；首先在控制台中输入命令查看自己的GitHubPages的IP地址（下面假设ip地址为111.111.111.111）</p>
+<pre><code>    ping yourname.github.io
+</code></pre><p>接下来去进行域名解析，在域名解析中添加两条解析：<br></p>
+<ol>
+<li>记录类型：CNAME 主机记录：WWW 记录值：yourname.github.io</li>
+<li>记录类型：A     主机记录：@   记录值：111.111.111.111<br>最后回到GitHub的这个仓库的设置中，往下滑找到GithubPages的设置，在CustomDomain中填入域名并且保存。但是这样每次重新部署博客之后都需要这样重新操作一次，为了一劳永逸，可以在博客根目录下的source文件夹中添加文件CNAME，里面填写域名。这样域名就不需要重新设置了。注意：名字就叫CNAME，没有后缀名。顺便说下，目前没在码云上找到自定义域名的选项。</li>
 </ol>
-<ul>
-<li>ECMAScript 编程语法和基础核心</li>
-<li>DOM 文档对象模型，控制网页元素等</li>
-<li>BOM 浏览器对象模型，与浏览器进行互动，弹出对话框获取分辨率等<h2 id="输入输出语句"><a href="#输入输出语句" class="headerlink" title="输入输出语句"></a>输入输出语句</h2>  prompt()//输入框<br>  alert()//弹出框<br>  console.log()//控制台输出<h2 id="JavaScript是弱类型语言，由值决定变量类型"><a href="#JavaScript是弱类型语言，由值决定变量类型" class="headerlink" title="JavaScript是弱类型语言，由值决定变量类型"></a>JavaScript是弱类型语言，由值决定变量类型</h2></li>
-<li>number 最大值：MAX_VALUE 最小值：MIN_VALUE Infinity:无穷大 NaN：非数值</li>
-<li>boolean</li>
-<li>string “”和’’均可表示字符串</li>
-<li>undefined 声明变量但未赋值的类型</li>
-<li>null </li>
-<li>object<h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2>转换为string：toString()、String()强制类型转换、通过”+”进行隐式转换<br>转换为number：parseInt()和parseFloat()、Number()强制类型转换、通过算术运算符(-*/)隐式转换<br>转换为Boolean：Boolean()；0、NaN、Null、undefined、空字符串转换为false,其他的为true;<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2></li>
-<li>尽量避免使用new Array()</li>
-<li>Array.length是可读写的；</li>
-<li>pop()和push()分别是在数组结尾弹出和压入数据</li>
-<li>shift()和unshift()则是在数组开头弹出和压入数据<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2></li>
-<li>用function声明函数 function name(){}或者var name=function(){}</li>
-<li>若实参个数多于形参，则多余的不传入</li>
-<li>若实参个数少于形参，则视为没有接收值（undefined）</li>
-<li>arguments里存储了所有传递过来的实参</li>
-<li>es6以后才有块级作用域<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2></li>
-<li>利用字面量{}创建对象 如var obj{}</li>
-<li>对象内的属性或者方法采取键值对的形式 键 属性名：值 属性值</li>
-<li>多个属性或者方法中奖用逗号隔开</li>
-</ul>
-<pre><code>    //创建对象方式1
-    var man={
-        name:&quot;张三&quot;,
-        age:18,
-        sex:&quot;男&quot;,
-        say:function(){
-            console.log(&quot;HelloWorld&quot;);
-        }
-    }
-
-    //创建对象方式2 通过追加属性和函数
-    man=new Object();//创建空对象
-    man.name=&#39;张三&#39;;
-    man.age=18;
-    man.sex=&#39;男&#39;；//追加属性
-    man.say=function(){
-        console.log(&quot;HelloWorld&quot;);
-    }//追加函数
-
-    //创建对象方式3 通过构造函数
-    function Person(name,age,sex){
-        this.name=name;
-        this.age=age;
-        this.sex=sex;
-        this.say=function(){
-        console.log(&quot;HelloWorld&quot;);
-        }
-    }
-    man=new Person(&#39;张三&#39;,18,&#39;男&#39;);
-
-
-    //调用对象的属性的两种方法
-    console.log(man.name);
-    console.log(man[&#39;name&#39;]);
-    调用对象的函数
-    man.say();
-
-    //遍历对象里的所有元素
-    for(var k in man){
-        console.log(k);//name age sex say
-        console.log(man[k]);//张三 18 男 say(){console.log(&quot;HelloWorld&quot;);}
-    }
-</code></pre><h2 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h2><ol>
-<li>js引擎运行js分为两步：预解析 代码执行</li>
-<li>预解析 js会把js里所有的var和function提升到当前作用域的最前面</li>
-<li>变量预解析：将所有的变量声明提升到当前作用域最前面 不提升赋值操作</li>
-<li>函数预解析：将所有的函数声明提升到当前作用域最前面 不调用函数</li>
-</ol>
-
+<h2 id="一些Hexo基本操作"><a href="#一些Hexo基本操作" class="headerlink" title="一些Hexo基本操作"></a>一些Hexo基本操作</h2><pre><code>    hexo clean #清除缓存文件 (db.json) 和已生成的静态文件 (public)   
+    hexo new [layout] &lt;title&gt; #新建一篇文章，不设置layout会调用_config.yml中的default_layout
+    hexo g #生成静态文件
+    hexo s #启动服务器。默认情况下，访问网址为： http://localhost:4000/。 -p可用来设置端口
+</code></pre>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -334,28 +290,11 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/04/09/HTML学习/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                HTML学习记录</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2020/04/09/Wordpress博客搭建/" rel="next">
+            <a href="/2020/04/09/C#盲区/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
               </div>
@@ -363,7 +302,7 @@
               Next Post</span>
               <div class="info">
                 <h3>
-                Wordpress博客搭建</h3>
+                C#盲区</h3>
                 <hr>
               </div>
             </a>
@@ -387,11 +326,11 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="von.cool" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="Von.cool" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="Von" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="von.cool" itemprop="url" rel="author">hojun</a>
+            <a href="Von.cool" itemprop="url" rel="author">Von</a>
             </h3>
           </div>
         </div>
