@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="von.cool/"/>
-  <updated>2020-04-08T13:39:42.686Z</updated>
+  <updated>2020-04-08T17:40:21.869Z</updated>
   <id>von.cool/</id>
   
   <author>
@@ -17,11 +17,109 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>FirstBlog</title>
-    <link href="von.cool/2020/04/08/FirstBlog/"/>
-    <id>von.cool/2020/04/08/FirstBlog/</id>
-    <published>2020-04-08T13:38:04.000Z</published>
-    <updated>2020-04-08T13:39:42.686Z</updated>
+    <title>C#盲区</title>
+    <link href="von.cool/2020/04/09/C#%E7%9B%B2%E5%8C%BA/"/>
+    <id>von.cool/2020/04/09/C#盲区/</id>
+    <published>2020-04-08T17:17:19.000Z</published>
+    <updated>2020-04-08T17:40:21.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;Checked{} 用于检查数值计算是否溢出，若移除则抛出异常。对float和double无效，因为float和double有无限大和无限小值&lt;/li&gt;
+&lt;li&gt;byte sbyte short ushort
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="von.cool/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTML学习记录</title>
+    <link href="von.cool/2020/04/09/HTML%E5%AD%A6%E4%B9%A0/"/>
+    <id>von.cool/2020/04/09/HTML学习/</id>
+    <published>2020-04-08T17:17:19.000Z</published>
+    <updated>2020-04-08T17:22:34.804Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTML学习记录&quot;&gt;&lt;a href=&quot;#HTML学习记录&quot; class=&quot;headerlink&quot; title=&quot;HTML学习记录&quot;&gt;&lt;/a&gt;HTML学习记录&lt;/h1&gt;&lt;h2 id=&quot;html注释&quot;&gt;&lt;a href=&quot;#html注释&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="von.cool/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS学习记录</title>
+    <link href="von.cool/2020/04/09/CSS%E5%AD%A6%E4%B9%A0/"/>
+    <id>von.cool/2020/04/09/CSS学习/</id>
+    <published>2020-04-08T17:17:19.000Z</published>
+    <updated>2020-04-08T17:22:41.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CSS学习记录&quot;&gt;&lt;a href=&quot;#CSS学习记录&quot; class=&quot;headerlink&quot; title=&quot;CSS学习记录&quot;&gt;&lt;/a&gt;CSS学习记录&lt;/h1&gt;&lt;h2 id=&quot;创建css的方法&quot;&gt;&lt;a href=&quot;#创建css的方法&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="von.cool/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习记录</title>
+    <link href="von.cool/2020/04/09/JS%E5%AD%A6%E4%B9%A0/"/>
+    <id>von.cool/2020/04/09/JS学习/</id>
+    <published>2020-04-08T17:17:19.000Z</published>
+    <updated>2020-04-08T17:22:29.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript学习&quot;&gt;&lt;a href=&quot;#JavaScript学习&quot; class=&quot;headerlink&quot; title=&quot;JavaScript学习&quot;&gt;&lt;/a&gt;JavaScript学习&lt;/h1&gt;&lt;h2 id=&quot;javascript嵌入方式&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="von.cool/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Wordpress博客搭建</title>
+    <link href="von.cool/2020/04/09/Wordpress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>von.cool/2020/04/09/Wordpress博客搭建/</id>
+    <published>2020-04-08T17:17:19.000Z</published>
+    <updated>2020-04-08T17:22:16.288Z</updated>
     
     <summary type="html">
     
@@ -35,50 +133,8 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="von.cool/2020/04/08/hello-world/"/>
-    <id>von.cool/2020/04/08/hello-world/</id>
-    <published>2020-04-08T13:26:24.642Z</published>
-    <updated>2020-04-08T13:26:24.643Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="von.cool/2018/12/12/Hexo-Theme-Sakura/"/>
-    <id>von.cool/2018/12/12/Hexo-Theme-Sakura/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2020-03-16T10:41:30.000Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
       <category term="技术" scheme="von.cool/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-      <category term="web" scheme="von.cool/tags/web/"/>
-    
-      <category term="悦读" scheme="von.cool/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
   
