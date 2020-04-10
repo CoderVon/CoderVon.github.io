@@ -1,739 +1,800 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Von的备份站</title>
-  
-    <link rel="shortcut icon" href="/img/logo/SmallLogo.ico">
-  
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
-  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/lib.min.css" media="all">
-  <link rel="stylesheet" href="/css/font.css" media="all">
-  <link rel="stylesheet" href="/css/insight.css" media="all">
-  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
-  <link rel="stylesheet" href="/css/zoom.css" media="all">
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
-" type="text/css" media="all"> -->
-  <script>
-  /*Initial Variables*/
-  var mashiro_option = new Object();
-  var mashiro_global = new Object();
-  mashiro_option.NProgressON = true;
-  /* 
-   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
-   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
-   */
-  mashiro_option.email_domain = "";
-  mashiro_option.email_name = "";
-  mashiro_option.cookie_version_control = "";
-  mashiro_option.qzone_autocomplete = false;
-  mashiro_option.site_name = "Von";
-  mashiro_option.author_name = "Von";
-  mashiro_option.site_url = "codemonkey.club";
-  mashiro_option.v_appId = "9FfKTI9vHzOUU5BxdWYHLxPy-gzGzoHsz";
-  mashiro_option.v_appKey = "7HiqoMCtXpYBfJT3CGSXyF78";
-  mashiro_option.mathjax = "0";
-  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
-  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
-
-  /*End of Initial Variables*/
-  </script>
-  <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/1.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/2.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/3.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/4.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/5.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/6.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/7.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/8.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/9.webp,https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/10.webp".split(",");
-  var bgindex = Math.floor(Math.random()*bg.length);
-  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-    alert('朋友，IE浏览器未适配哦~');
-  }
-  </script>
-  <style type="text/css">
-  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
-  </style>
-  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
-  </style>
+  
+  <title>Von的备份站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是一个备份站，仅作为个人文章备份使用">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Von的备份站">
+<meta property="og:url" content="von.cool/index.html">
+<meta property="og:site_name" content="Von的备份站">
+<meta property="og:description" content="这是一个备份站，仅作为个人文章备份使用">
+<meta property="og:locale" content="zh-cn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Von的备份站">
+<meta name="twitter:description" content="这是一个备份站，仅作为个人文章备份使用">
+  
+    <link rel="alternate" href="/atom.xml" title="Von的备份站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 </html>
-<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-  <div class="scrollbar" id="bar">
-  </div>
-  <a href="#" class="cd-top faa-float animated"></a>
-  <section id="main-container">
-    <div class="headertop ">
-  <div id="banner_wave_1"></div>
-  <div id="banner_wave_2"></div>
-  <figure id="centerbg" class="centerbg">
-    <div class="focusinfo no-select">
-      <div class="header-tou">
-        <a href="codemonkey.club">
-          <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/custom/Rick.png">
-        </a>
-      </div>
-      <div class="header-info">
-        <p> 弱小和无知不是生存的障碍，傲慢才是。</p>
-        <div class="top-social_v2">
-          <li id="bg-pre">
-            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
-          </li>
-          
-            
-              
-                <li>
-                  <a href="https://github.com/CoderVon" target="_blank" class="social-github" title="github">
-                    <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/social/github.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://weibo.com/2966707022/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" class="social-github" title="sina">
-                    <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/social/sina.png">
-                  </a>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://music.163.com/#/user/home?id=30285543" target="_blank" class="social-github" title="wangyiyun">
-                    <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/social/wangyiyun.png">
-                  </a>
-                </li>
-              
-            
-          
-          <li id="bg-next">
-            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
-          </li>
-        </div>
-      </div>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Von的备份站</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">练习时长两年半的码农</a>
+        </h2>
+      
     </div>
-  </figure>
-  <div id="video-container" style="">
-    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
-    </video>
-    <div id="video-btn" class="loadvideo videolive">
-    </div>
-    <div id="video-add">
-    </div>
-    <div class="video-stu">
-    </div>
-  </div>
-  <div class="headertop-down faa-float animated" onclick="headertop_down()">
-    <span>
-      <i class="fa fa-chevron-down" aria-hidden="true">
-      </i>
-    </span>
-  </div>
-</div>
-    <div id="page" class="site wrapper">
-      <header class="site-header no-select gizle sabit" role="banner">
-  <div class="site-top">
-    <div class="site-branding">
-      <span class="site-title">
-        <span class="logolink moe-mashiro">
-          <a href="/">
-            <span class="sakurasono"></span>
-            <span class="shironeko">Von</span>
-          </a>
-        </span>
-      </span>
-    </div>
-    <div class="searchbox search-form-submit">
-      <i class="iconfont js-toggle-search iconsearch icon-search">
-      </i>
-    </div>
-    <div id="show-nav" class="showNav mobile-fit">
-      <div class="line line1">
-      </div>
-      <div class="line line2">
-      </div>
-      <div class="line line3">
-      </div>
-    </div>
-    <div class="lower-cantiner">
-      <div class="lower">
-        <nav class="mobile-fit-control hide">
-          <ul id="menu-new" class="menu">
-            
-              <li>
-                <a href="/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-                    首页
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-                    归档
-                  </span>
-                </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/categories/技术/">
-                          <i class="fa fa-code" aria-hidden="true"></i>
-                          技术
-                        </a>
-                      </li>
-                    
-                  </ul>
-                
-              </li>
-            
-              <li>
-                <a href="/comment/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-                    留言板
-                  </span>
-                </a>
-                
-              </li>
-            
-          </ul>
-        </nav>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="von.cool"></form>
       </div>
     </div>
   </div>
 </header>
-
-      <div class="blank" style="padding-top: 0px;"></div>
-<div id="content" class="site-content">
+      <div class="outer">
+        <section id="main">
   
-  <div class="notice" style="margin-top:60px">
-    <i class="iconfont icon-notification">
-    </i>
-    <div class="notice-content">这是一个备份站，仅作为个人的文章备份使用</div>
+    <article id="post-Wordpress博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/Wordpress博客搭建/" class="article-date">
+  <time datetime="2020-04-08T19:17:13.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </div>
-  
-  <div class="top-feature-row">
-  <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-  <i class="fa fa-anchor" aria-hidden="true">
-  </i>
-  START:DASH!!</h1>
-  
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/5s.webp" rel="gallery_ck8u5ts0t0005u4akd5k9fo3z">
+        <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/5s.webp" itemprop="image">
+      </a>
+    
+  </div>
 </div>
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-envira" aria-hidden="true"></i>
-      Discovery</h1>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/Wordpress博客搭建/">Wordpress博客搭建</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <h1 id="个人博客搭建流程"><a href="#个人博客搭建流程" class="headerlink" title="个人博客搭建流程"></a>个人博客搭建流程</h1><p>在学习了html+css+js的一些基础前端知识以后开始了对个人博客的构建。<br>现在的博客框架有很多，hexo、hugo、jekyll、wordpress、halo之类的，搭建方式大同小异。最后我这里选择的是Wordpress，原因也很简单，就是用的人多，出现问题也比较好解决。</p>
+<p>步骤：</p>
+<ol>
+<li>选择服务器：我这里选择的是阿里云的服务器，系统选择centos7;</li>
+<li><p>安装环境：可以选择自己手动安装对应的web服务器数据库运行时环境之类的，这里我选择了直接安装宝塔界面，因为宝塔界面里有常用环境的一键安装，而且图形化界面操作起来也很方便；</p>
+<pre><code> yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh 
+</code></pre><p> 安装完成后，会显示类似这样的提示</p>
+<pre><code> bt-panel-url:http://xxx.xxx.xxx.xxx:8888/adfewax/
+ username:sjinshj
+ password:ssdfafg
+</code></pre><p> 其中url就是宝塔界面的面板了，把url复制到浏览器打开就可以进入宝塔面板。注意的是需要在服务器上先把端口8888打开,否则是无法访问的。</p>
+<pre><code> 第一次进入宝塔界面需要选择环境，LNMP环境比较轻量级，适合个人使用。安装环境的同时可以进入面板设置把面板端口、安全入口、面板用户、面板密码之类的都修改一下。如果之后忘记了账号和密码，可以进ssh输入重置密码的命令：cd /www/server/panel &amp;&amp; python tools.pyc panel password,其中password就是要修改的密码。如果是宝塔面板6.x和以上版本的话，直接输入bt就进入宝塔面板中文的命令行图形界面。
+</code></pre><p> 等宝塔安装的LNMP环境装好后，再去服务器上开放一个80端口（用于http协议），一个21端口（用于FTP），一个任意端口（用于数据库访问）；</p>
+</li>
+<li><p>新建站点：在宝塔界面的网站面板点击添加站点，域名填自己的域名或者服务器公网ip，注意根目录位置，以后80端口默认访问的位置就是这里，FTP选择创建、数据库选择创建MySQl和utf8，php版本选择当前环境的版本，然后创建就好了；</p>
+</li>
+<li><p>新建数据库：打开宝塔界面的数据库面板，点击phpMyAdmin，可以打开phpMyadmin的图形界面，在图形界面中新建一个数据库用来存放wordpress的相关数据，记住数据库名字，后面构建wordpress时要用，注意排序规则选择要utf8-general-ci；</p>
+</li>
+<li>建立博客：官网下载wordpress压缩包传到上面第3步中的根目录位置中，把根目录原来的文件删除，再把wordpress的文件解压放在根目录中，至此博客其实已经搭好了，接下来就进行博客的配置了；</li>
+<li>配置博客：浏览器中输入第3步中的域名地址，就可以进入博客的初始化界面了，语言选择中文以后填写就行了，值得注意的是有一个配置数据库的地方需要把第4步中在phpmyadmin中建立的数据库名字填入，数据库账号和密码可以回到宝塔面板中的数据库面板里的root密码中查看，其他的按照默认的就行了，闭着眼睛点下一步。至此就搭建好了一个wordpress博客，接下来在wordpress后台中选择一个自己中意的主题就可以开始写博客了。值得注意的事情是workpress无法原生支持MD语法，可以去下载WP-Githuber-MD插件，这样就可以支持MD语法了；</li>
+<li>配置伪静态：回到宝塔面板的网站面板，打开刚才创建的站点的设置界面，在伪静态一栏中输入下面的代码就可以了</li>
+</ol>
+<pre><code>    location /
+    {
+    try_files $uri $uri/ /index.php?$args;
+    }
+    rewrite /wp-admin$ $scheme://$host$uri/ permanent;
+</code></pre><h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2><p>wordpress中可以直接添加额外的css来自定义博客的样式，当然也可以自己直接定制一个自己的主题；<br>目前还在学习修改主题和自定义主题。</p>
 
-  <div class="post-thumb">
-    <a href="/2020/04/09/Wordpress博客搭建/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/5s.webp">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 03:04</div>
-      <a href="/2020/04/09/Wordpress博客搭建/" class="post-title">
-        <h3>Wordpress博客搭建</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/Wordpress博客搭建/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/Wordpress博客搭建/" data-id="ck8u5ts0t0005u4akd5k9fo3z" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
-</article>
   
+</article>
+
+
+  
+    <article id="post-使用Hexo建立博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/使用Hexo建立博客/" class="article-date">
+  <time datetime="2020-04-08T18:15:23.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
     
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
 
-  <div class="post-thumb">
-    <a href="/2020/04/09/使用Hexo建立博客/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/7s.webp">
-    </a>
   </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 02:04</div>
-      <a href="/2020/04/09/使用Hexo建立博客/" class="post-title">
-        <h3>使用Hexo+Github/码云建立博客并且更改自定义域名</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/使用Hexo建立博客/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
+  <div class="article-inner">
     
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2020/04/09/C_sharp盲区/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/1s.webp">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 01:04</div>
-      <a href="/2020/04/09/C_sharp盲区/" class="post-title">
-        <h3>C#盲区</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/C_sharp盲区/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
+<div class="article-gallery">
+  <div class="article-gallery-photos">
     
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2020/04/09/CSS学习/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/2s.webp">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 01:04</div>
-      <a href="/2020/04/09/CSS学习/" class="post-title">
-        <h3>CSS学习记录</h3>
+      <a class="article-gallery-img fancybox" href="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/7s.webp" rel="gallery_ck8u5ts0z0009u4ak2c15zym5">
+        <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/7s.webp" itemprop="image">
       </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/CSS学习/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
     
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2020/04/09/HTML学习/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png">
-    </a>
   </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 01:04</div>
-      <a href="/2020/04/09/HTML学习/" class="post-title">
-        <h3>HTML学习记录</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/HTML学习/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2020/04/09/JS学习/">
-      <img class="lazyload" onerror="imgError(this,3)" src="/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/4s.webp">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2020-4-9 00:04</div>
-      <a href="/2020/04/09/JS学习/" class="post-title">
-        <h3>JavaScript学习记录</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/技术/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2020/04/09/JS学习/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-
-
-    </main>
-      <!-- 首页默认取最最新文章集 -->
-    <!--  -->
-  </div>
-  
 </div>
 
-    </div>    
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/使用Hexo建立博客/">使用Hexo+Github/码云建立博客并且更改自定义域名</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用Hexo-Github-码云建立博客并且更改自定义域名"><a href="#使用Hexo-Github-码云建立博客并且更改自定义域名" class="headerlink" title="使用Hexo+Github/码云建立博客并且更改自定义域名"></a>使用Hexo+Github/码云建立博客并且更改自定义域名</h1><p>本来没打算用hexo建博客的，整那么多博客也没啥用，不过刚才突然发现自己有一个无法备案的域名，想了想正好用来给GithubPages做自定义域名，毕竟域名都买了也不能浪费嘛。<br>说干就干，现在开始。</p>
+<hr>
+<h2 id="安装好node-js"><a href="#安装好node-js" class="headerlink" title="安装好node.js"></a>安装好node.js</h2><p>这个没什么好说的 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">点我进入官网</a>，下载完之后一直下一步就行了，windows记得配置好环境变量;</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>既然要搞Hexo博客，自然得下载Hexo。PowerShell打开输入命令就行了</p>
+<pre><code>    npm install -g hexo
+</code></pre><p>如果速度太慢，挂梯子或者用下条指令切换成国内淘宝团队做的镜像cnpm，cnpm基本可以完全代替npm了，淘宝镜像和官方现在是每10分钟同步一次。</p>
+<pre><code>    npm install -g cnpm --registry=http://registry.npm.taobao.org
+    cnpm install -g hexo
+</code></pre><h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2><p>命令行输入指令到需要建立博客的位置之后初始化hexo，接下来git会自动去clone hexo的本体和一个主题，如果报错了先去装个git并把环境变量配置好</p>
+<pre><code>    hexo init
+</code></pre><h2 id="运行Hexo"><a href="#运行Hexo" class="headerlink" title="运行Hexo"></a>运行Hexo</h2><p>输入下面的指令会弹出一个地址，通过这个地址就可以访问hexo博客了</p>
+<pre><code>    hexo s
+</code></pre><h2 id="部署到Github和码云上"><a href="#部署到Github和码云上" class="headerlink" title="部署到Github和码云上"></a>部署到Github和码云上</h2><p>首先在Github或者码云上建立一个空的仓库，仓库名字要和你的Github名字一摸一样。<br>接着回到hexo的根目录，打开_config.yml文件，修改其中的deploy的内容</p>
+<pre><code>    deploy:
+    type: git
+    repo:
+    github: https://github.com/CoderVon/CoderVon.github.io.git,master
+    gitee: https://gitee.com/codervon/CoderVon.gitee.io.git,master
+</code></pre><p>如果习惯用ssh可以把链接改成ssh的，分支如果不填写的话默认也是master;<br><br>接下来就是输入指令部署就可以了</p>
+<pre><code>    hexo d
+</code></pre><p>等部署完成以后，就可以通过  yourname.github.io  / yourname.gitee.io来访问hexo博客了；</p>
+<h2 id="更改自定义域名"><a href="#更改自定义域名" class="headerlink" title="更改自定义域名"></a>更改自定义域名</h2><p>如果你没有云服务器又想用自己的域名来访问博客的话，就需要去进行域名解析；首先在控制台中输入命令查看自己的GitHubPages的IP地址（下面假设ip地址为111.111.111.111）</p>
+<pre><code>    ping yourname.github.io
+</code></pre><p>接下来去进行域名解析，在域名解析中添加两条解析：<br></p>
+<ol>
+<li>记录类型：CNAME 主机记录：WWW 记录值：yourname.github.io</li>
+<li>记录类型：A     主机记录：@   记录值：111.111.111.111<br>最后回到GitHub的这个仓库的设置中，往下滑找到GithubPages的设置，在CustomDomain中填入域名并且保存。但是这样每次重新部署博客之后都需要这样重新操作一次，为了一劳永逸，可以在博客根目录下的source文件夹中添加文件CNAME，里面填写域名。这样域名就不需要重新设置了。注意：名字就叫CNAME，没有后缀名。顺便说下，目前没在码云上找到自定义域名的选项。</li>
+</ol>
+<h2 id="一些Hexo基本操作"><a href="#一些Hexo基本操作" class="headerlink" title="一些Hexo基本操作"></a>一些Hexo基本操作</h2><pre><code>    hexo clean #清除缓存文件 (db.json) 和已生成的静态文件 (public)   
+    hexo new [layout] &lt;title&gt; #新建一篇文章，不设置layout会调用_config.yml中的default_layout
+    hexo g #生成静态文件
+    hexo s #启动服务器。默认情况下，访问网址为： http://localhost:4000/。 -p可用来设置端口
+</code></pre><h2 id="优化自定义域名访问速度"><a href="#优化自定义域名访问速度" class="headerlink" title="优化自定义域名访问速度"></a>优化自定义域名访问速度</h2><p>由于GitHub毕竟在境外，所以单纯把域名解析到github上的话在境内访问速度不尽如人意，而且GitHub拒绝百度的访问，对境内的小伙伴实在不友好，最好的解决办法就是同时把域名解析到境内的Coding和境外的GitHub上，在域名解析中添加coding的解析设为默认，把GitHub的解析设为境外，这样就可以解决访问速度的问题了。注意：最好先解析到codidng中把coding的证书申请完再添加GitHub的解析记录，不然可能会申请不到证书。<br><img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN/pic-go/ssl申请失败.jpg" alt></p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/使用Hexo建立博客/" data-id="ck8u5ts0z0009u4ak2c15zym5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-C_sharp盲区" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/C_sharp盲区/" class="article-date">
+  <time datetime="2020-04-08T17:28:22.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/1s.webp" rel="gallery_ck8u5ts0n0002u4akza4xqsd4">
+        <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/1s.webp" itemprop="image">
+      </a>
+    
+  </div>
 </div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            // PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-    <!-- <footer id="footer">
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/C_sharp盲区/">C#盲区</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Checked{} 用于检查数值计算是否溢出，若移除则抛出异常。对float和double无效，因为float和double有无限大和无限小值</li>
+<li>byte sbyte short ushort 没有自己的算数运算符，C#会隐式把它们转换为更大的整数类型</li>
+<li>float double的特殊值有:NaN、PositiveInfinity、NegativeInfinity、-0.0；其中1/-0.0等于NegativeInfinity,以此类推；</li>
+<li>使用==判断时，NaN不等于任何值，包括NaN;使用object.Equals()时，两个NaN相等;可用float.IsNaN()判断NaN；</li>
+<li>&amp;和|也可以用来进行与或的逻辑判断，但是没有短路机制，所以最好还是只用来按位与或</li>
+<li>string之间大量用+拼接比较消耗性能,大量拼接时最好使用string.build();</li>
+<li>字符串插值 \$作为前缀，可在字符串内用{}包含任何C#表达式，会调用对应的toString()方法或者等效方法，在插值中需要输入”  {“时应该输入"{{ “。默认支支持单行，除非使用@,并且$要在@前;</li>
+<li>ref out.形参和实参中使用ref和out关键字可以使值类型按照引用传递,out通常用于返回多个参数，私有的ou可用”_”代替</li>
+<li>Params参数中可用Params修饰一个数组，在实参中就可一动态输入任意数量的该类型参数。Params必须时方法中的最后一个参数.</li>
+<li>可选参数 形参中直接赋值初始化可以让这个参数变为可选参数，在实参中可以不输入该参数，若未输入该参数，则自动变为初始值。可选参数不能使用ref或者out，必填参数必须在可选参数前面，Params例外，仍然要在最后</li>
+<li>命名参数 实参中可以使用例如x:1,y:2这样的方式传参，这个传的参可以不用考虑参数输入顺序</li>
+<li>ref locals可以引用一个数组的某个位置</li>
+<li>右结合操作符：赋值 lambda null合并操作符 null条件操作符，其余所有操作符都是左结合的</li>
+<li>null合并操作符 “??”如”s1=null;s2=s1??some”,则s2=some，若s1不为null,则s2=s1;</li>
+<li>null条件操作符 “?.”用于调用成员变量和方法，用法同”.”；若为空引用则返回null而不抛出异常</li>
+<li>? 拥有短路特性，“？”前出现null则不进行后面的表达式计算</li>
+<li>可空值类型 值类型后加一个”?”可使其变为可空值类型，如”int? n=null;” Nullable&lt;&gt;也可声明可空值类型</li>
+<li>switch现在可以匹配类型</li>
+<li>Null==Null的结果是true</li>
+<li>字符串没有内容 可分为两种:null空字符串和空白字符串</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/C_sharp盲区/" data-id="ck8u5ts0n0002u4akza4xqsd4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-CSS学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/CSS学习/" class="article-date">
+  <time datetime="2020-04-08T17:19:12.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/2s.webp" rel="gallery_ck8u5ts0f0000u4aknxx0clt7">
+        <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/2s.webp" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/CSS学习/">CSS学习记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS学习记录"><a href="#CSS学习记录" class="headerlink" title="CSS学习记录"></a>CSS学习记录</h1><h2 id="创建css的方法"><a href="#创建css的方法" class="headerlink" title="创建css的方法"></a>创建css的方法</h2><ol>
+<li>使用元素内嵌样式表 元素内</li>
+<li>使用文档内嵌样式表 head内</li>
+<li>使用外部样式表 导入方式：\<link href="1a.css" rel="stylesheet" type="text/css"> </li>
+</ol>
+<h2 id="Style元素"><a href="#Style元素" class="headerlink" title="Style元素"></a>Style元素</h2><pre><code>  font-size 控制文本大小
+  color 控制文本颜色
+  border 边框设置
+        -border-width 边框宽度
+        -border-style 边框样式
+        -border-color 边框颜色
+        -border-up 上边框 其他同理
+        -border-radius 设置圆角边框；border-radius:20px/15px 为设置圆心离边框左右距离20px,上下距离15px的四个圆角
+  background 背景设置
+        -background-color 背景颜色
+        -background-position 背景位置
+        -background-size 背景图像尺寸
+        -background-repeat 背景重复方式
+        -background-origin 
+        -background-clip
+        -background-attachment 设置背景是否随滚轮移动
+        -background-image 设置背景图片
+  text 文本设置
+        -text-align 对齐方式
+        -direction 书写方向,对中文没什么用处
+        -letter-spacing 字间距
+        -word-spacing 单词间距 英语有效
+        -line-height 行高
+        -text-indent 首行缩进
+        -text-decoration 文本装饰
+        -text-transform 文本大小写转换
+        -text-shadow 文本阴影，参数为 水平阴影距离 竖直阴影距离 模糊程度 颜色
+  font 字体设置
+        -font-family 显示字体
+        -font-size 字体大小
+        -font-style 字体类型
+        -font-variant 小型大写字母
+        -font-weight 字体粗细设置
+  transition 过渡设置
+        -transition-delay 延迟时间
+        -transition-duration 动画时间
+        -transiton-property 控制过渡的属性是哪个
+        -transiton-timing-function 过渡使用的贝塞尔曲线
+  animation 动画设置
+        -transition-delay 延迟时间
+        -transition-duration 动画时间
+        -transition-name 动画名字 动画名字在@keyframes中使用;@keyframes中效果是从from到to的
+        -transition-iteration-count 动画次数 从from到to算一次，反过来也算一次
+        -animation-direction 动画方向
+        -animation-fill-mode 规定填充格式 常用forwards使动画最后停留在最后一帧
+  transform 变换设置
+        -transform:rotate(ndeg) 旋转变换n度
+        -transform:scale(n) 缩放n倍
+        -transform-origin 锚点
+</code></pre><h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><ul>
+<li><h3 id="根据类型选择元素"><a href="#根据类型选择元素" class="headerlink" title="根据类型选择元素"></a>根据类型选择元素</h3><pre><code> - a{ }则为\&lt;a&gt;标签选择器
+</code></pre></li>
+<li><h3 id="选择所有元素"><a href="#选择所有元素" class="headerlink" title="选择所有元素"></a>选择所有元素</h3><pre><code> - *{ }为所有选择器
+</code></pre></li>
+<li><h3 id="根据类选择元素"><a href="#根据类选择元素" class="headerlink" title="根据类选择元素"></a>根据类选择元素</h3><pre><code>- 标签内属性class=&quot;a&quot;，这个是一个全局属性
+- .a{}为类a的选择器
+</code></pre></li>
+<li><h3 id="根据ID选择元素"><a href="#根据ID选择元素" class="headerlink" title="根据ID选择元素"></a>根据ID选择元素</h3><pre><code>- 标签内属性id=&quot;b&quot;，每个元素id唯一，这个是一个全局属性
+- #b{}为id为b的选择器
+</code></pre></li>
+<li><h3 id="根据属性选择元素"><a href="#根据属性选择元素" class="headerlink" title="根据属性选择元素"></a>根据属性选择元素</h3><pre><code>- 标签内任意属性都可以使用 例如herf
+- [herf]{}为属性有herf的选择器
+- [herf:11.html]{}为属性有herf:11.html的选择器
+</code></pre></li>
+<li><h3 id="选择器动作"><a href="#选择器动作" class="headerlink" title=":选择器动作"></a>:选择器动作</h3><pre><code>- a:hover{}为冒号选择器，有很多种
+</code></pre><h2 id="各浏览器私有属性"><a href="#各浏览器私有属性" class="headerlink" title="各浏览器私有属性"></a>各浏览器私有属性</h2><pre><code>-webkit chrome、safari私有属性
+ -o Opera私有属性
+-moz firefox浏览器私有属性
+-ms IE浏览器私有属性
+</code></pre><h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><img src="https://img-blog.csdn.net/20140124141001609?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvenl1eml4aWFv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/CSS学习/" data-id="ck8u5ts0f0000u4aknxx0clt7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/HTML学习/" class="article-date">
+  <time datetime="2020-04-08T17:18:19.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/HTML学习/">HTML学习记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HTML学习记录"><a href="#HTML学习记录" class="headerlink" title="HTML学习记录"></a>HTML学习记录</h1><h2 id="html注释"><a href="#html注释" class="headerlink" title="html注释"></a>html注释</h2><pre><code>&lt;!-- --&gt;
+&lt;br/&gt;换行
+</code></pre><h2 id="html基本结构"><a href="#html基本结构" class="headerlink" title="html基本结构"></a>html基本结构</h2><pre><code>&lt;!DOCTYPE html&gt;&lt;!--这是让浏览器得知自己要处理的内容是html--&gt;
+&lt;html&gt;&lt;!--文档中html部分的开始--&gt;
+&lt;head&gt;&lt;!--提供有关文档内容合标注信息的--&gt;
+     &lt;meta charset===&quot;UTF-8&quot;&gt;&lt;!--meta 提供元数据--&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;这是标题&lt;/title&gt;&lt;!--用于标题的显示--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;h1&gt;这个更大&lt;/h1&gt;
+     靠谱学院
+     大家好，我是大哥
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h2><pre><code>\&lt;a&gt; 超链接
+\&lt;b&gt; 粗体
+\&lt;u&gt; 下划线
+\&lt;s&gt; 删除线
+</code></pre><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><pre><code>&lt;table&gt;用于创建一个表格
+&lt;tr&gt;创建一行表格 table row
+&lt;td&gt;表格数据 table data
+    &lt;td colspan=&quot;2&quot;&gt; 表示两行单元格合并成一个
+    &lt;td rowspan=&quot;2&quot;&gt; 表示两列单元格合并成一个
+&lt;th&gt;表格的头部使用，使得字体居中加粗 table head
+&lt;thead&gt;表头
+&lt;tbody&gt;表中
+&lt;tfoot&gt;表脚
+</code></pre><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>&lt;ol&gt;定义有序列表项
+    &lt;&lt;ol type=&quot;a&quot;&gt;&gt;type决定有序列表排序的字是abcd或者1234等等
+    &lt;ol reversed&gt;列表名称反转，如4321
+&lt;ul&gt;无列表
+&lt;li&gt;具体的一项
+</code></pre><h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>表单是用于用户输入的窗口<br></p>
+<h3 id="关键表单元素"><a href="#关键表单元素" class="headerlink" title="关键表单元素"></a>关键表单元素</h3><ol>
+<li>\<form> 表单<ul>
+<li>属性<ul>
+<li>method</li>
+<li>action  </li>
+</ul>
+</li>
+</ul>
+</form></li>
+<li>\<input> 单行文本框<ul>
+<li>属性<ul>
+<li>type<ul>
+<li>text 单行文本框</li>
+<li>password 密码</li>
+<li>button 按钮 无法与js协作</li>
+<li>submit 提交表单</li>
+<li>range 滑块 提供数字<ul>
+<li>min 最小值</li>
+<li>max 最大值</li>
+<li>step 步长</li>
+</ul>
+</li>
+<li>number 数字 手动输入<ul>
+<li>min</li>
+<li>max</li>
+</ul>
+</li>
+<li>checkbox 单选框</li>
+<li>radio 单选框 选中不可取消 若属性name相同则为同一组 其中一个必定选中</li>
+<li>email 检测格式</li>
+<li>tel 检测格式</li>
+<li>url 检测格式</li>
+<li>date 获取时间</li>
+<li>color 获取颜色</li>
+<li>search 搜索框</li>
+<li>hidden 蕴藏 但是提交表单时依然存在</li>
+<li>image 图片按钮 src中填入图片路径 width填入宽度 </li>
+<li>file 获取文件 multiple一次允许多个文件 Required必须上传一个文件 在使用input元素上传文件提交表单时要在form设置\&lt;enctype=”multipart/form-data”&gt;</li>
+</ul>
+</li>
+<li>value 占位符</li>
+<li>placeholder 不占位仅显示</li>
+<li>maxlength 最大长度</li>
+<li>size 控制单行文本框可输入文本长度</li>
+<li>readonly 只读</li>
+<li>list 与下文中datalist的id用同一个key</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>\<textarea> 多行文本框<ul>
+<li>属性<ul>
+<li>rows 行长</li>
+<li>cols 列长<ol>
+<li>\<button> 按钮 通过onclick用来和js协作的 </button></li>
+<li>\<select> \<option> 下拉选项 不能自行输入</option></select></li>
+<li>\<datalist>\<option>  下拉选项 可以自行输入，必须搭配input使用 需要填写ID属性与一个input里的list属性对应</option></datalist></li>
+<li>\<img>图片 alt为备用内容</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</textarea></li>
+</ol>
+<h2 id="客户端分区响应图"><a href="#客户端分区响应图" class="headerlink" title="客户端分区响应图"></a>客户端分区响应图</h2><p>\<map> 是客户端分区响应图的关键元素<br><br>\<area> 可以有多个，每个各自代表图像上可以被点击的一块区域</map></p>
+<ul>
+<li>shape coord属性的值解析 分为rect（有四个整数组成，分别为图像的左边缘、上边缘、右边缘、下边缘） circle(三个整数组成，分别为圆心坐标，圆的半径) poly default </li>
+<li>coords</li>
+<li>herf 链接</li>
+<li>alt 备用内同</li>
+</ul>
+<h2 id="视频播放"><a href="#视频播放" class="headerlink" title="视频播放"></a>视频播放</h2><p>\<video> 播放视频 可以嵌入\<source><br>src视频地址 <br><br>width视频宽度  <br><br>height视频长度  <br><br>autoplay网页完成后自动播放视频  <br><br>controls增加进度条和暂停控制<br><br>preload预先载入视频（None-不会载入 Metadata载入第一帧 Auto载入整个视频为默认状态） <br><br>loop循环播放<br><br>poster封面<br><br><br><br>\<source> 视频源，若video标签的视频无法播放会跳入source寻找视频播放</video></p>
+<h2 id="音频播放"><a href="#音频播放" class="headerlink" title="音频播放"></a>音频播放</h2><p>\<audio> 播放音频<br>和视频播放参数基本一样</audio></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/HTML学习/" data-id="ck8u5ts0w0007u4akppw8ep67" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JS学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/09/JS学习/" class="article-date">
+  <time datetime="2020-04-08T16:17:17.000Z" itemprop="datePublished">2020-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/4s.webp" rel="gallery_ck8u5ts1q000pu4akjl8qymh3">
+        <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/cover/4s.webp" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/09/JS学习/">JavaScript学习记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JavaScript学习"><a href="#JavaScript学习" class="headerlink" title="JavaScript学习"></a>JavaScript学习</h1><h2 id="javascript嵌入方式"><a href="#javascript嵌入方式" class="headerlink" title="javascript嵌入方式"></a>javascript嵌入方式</h2><ol>
+<li>通过\&lt;script>标签内直接内嵌，计较推荐内嵌到\<head><meta name="generator" content="Hexo 3.9.0">之间或者\后面</head></li>
+<li>导入外链的js文件，形同\<script type="text/javascript" src="路径+文件名">\</script></li>
+<li>行间事件，直接把js代码写入事件的简单操作（如鼠标点击移入等）中，形如\<input type="button" name id="button" onclick="JS代码"><h2 id="Javascript组成"><a href="#Javascript组成" class="headerlink" title="Javascript组成"></a>Javascript组成</h2></li>
+</ol>
+<ul>
+<li>ECMAScript 编程语法和基础核心</li>
+<li>DOM 文档对象模型，控制网页元素等</li>
+<li>BOM 浏览器对象模型，与浏览器进行互动，弹出对话框获取分辨率等<h2 id="输入输出语句"><a href="#输入输出语句" class="headerlink" title="输入输出语句"></a>输入输出语句</h2>  prompt()//输入框<br>  alert()//弹出框<br>  console.log()//控制台输出<h2 id="JavaScript是弱类型语言，由值决定变量类型"><a href="#JavaScript是弱类型语言，由值决定变量类型" class="headerlink" title="JavaScript是弱类型语言，由值决定变量类型"></a>JavaScript是弱类型语言，由值决定变量类型</h2></li>
+<li>number 最大值：MAX_VALUE 最小值：MIN_VALUE Infinity:无穷大 NaN：非数值</li>
+<li>boolean</li>
+<li>string “”和’’均可表示字符串</li>
+<li>undefined 声明变量但未赋值的类型</li>
+<li>null </li>
+<li>object<h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2>转换为string：toString()、String()强制类型转换、通过”+”进行隐式转换<br>转换为number：parseInt()和parseFloat()、Number()强制类型转换、通过算术运算符(-*/)隐式转换<br>转换为Boolean：Boolean()；0、NaN、Null、undefined、空字符串转换为false,其他的为true;<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2></li>
+<li>尽量避免使用new Array()</li>
+<li>Array.length是可读写的；</li>
+<li>pop()和push()分别是在数组结尾弹出和压入数据</li>
+<li>shift()和unshift()则是在数组开头弹出和压入数据<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2></li>
+<li>用function声明函数 function name(){}或者var name=function(){}</li>
+<li>若实参个数多于形参，则多余的不传入</li>
+<li>若实参个数少于形参，则视为没有接收值（undefined）</li>
+<li>arguments里存储了所有传递过来的实参</li>
+<li>es6以后才有块级作用域<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2></li>
+<li>利用字面量{}创建对象 如var obj{}</li>
+<li>对象内的属性或者方法采取键值对的形式 键 属性名：值 属性值</li>
+<li>多个属性或者方法中奖用逗号隔开</li>
+</ul>
+<pre><code>    //创建对象方式1
+    var man={
+        name:&quot;张三&quot;,
+        age:18,
+        sex:&quot;男&quot;,
+        say:function(){
+            console.log(&quot;HelloWorld&quot;);
+        }
+    }
+
+    //创建对象方式2 通过追加属性和函数
+    man=new Object();//创建空对象
+    man.name=&#39;张三&#39;;
+    man.age=18;
+    man.sex=&#39;男&#39;；//追加属性
+    man.say=function(){
+        console.log(&quot;HelloWorld&quot;);
+    }//追加函数
+
+    //创建对象方式3 通过构造函数
+    function Person(name,age,sex){
+        this.name=name;
+        this.age=age;
+        this.sex=sex;
+        this.say=function(){
+        console.log(&quot;HelloWorld&quot;);
+        }
+    }
+    man=new Person(&#39;张三&#39;,18,&#39;男&#39;);
+
+
+    //调用对象的属性的两种方法
+    console.log(man.name);
+    console.log(man[&#39;name&#39;]);
+    调用对象的函数
+    man.say();
+
+    //遍历对象里的所有元素
+    for(var k in man){
+        console.log(k);//name age sex say
+        console.log(man[k]);//张三 18 男 say(){console.log(&quot;HelloWorld&quot;);}
+    }
+</code></pre><h2 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h2><ol>
+<li>js引擎运行js分为两步：预解析 代码执行</li>
+<li>预解析 js会把js里所有的var和function提升到当前作用域的最前面</li>
+<li>变量预解析：将所有的变量声明提升到当前作用域最前面 不提升赋值操作</li>
+<li>函数预解析：将所有的函数声明提升到当前作用域最前面 不调用函数</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="von.cool/2020/04/09/JS学习/" data-id="ck8u5ts1q000pu4akjl8qymh3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/09/Wordpress博客搭建/">Wordpress博客搭建</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/09/使用Hexo建立博客/">使用Hexo+Github/码云建立博客并且更改自定义域名</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/09/C_sharp盲区/">C#盲区</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/09/CSS学习/">CSS学习记录</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/09/HTML学习/">HTML学习记录</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2020 Von<br>
-      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer> -->
-<footer id="colophon" class="site-footer" role="contentinfo">
-  <div class="site-info">
-    <div class="footertext">
-      <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
-      </div>
-      <p style="color: #666666;">&copy 2020 Von</p>
-    </div>
-    <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
-        </span>
-      </p>
-    </div>
-  </div><!-- .site-info -->
 </footer>
-
-
-
-<!-- <script src="/js/tocbot.js"></script> -->
-<script type="text/javascript" src="/js/lib.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/InsightSearch.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/js/zoom.min.js"></script>
-<script type="text/javascript" src="/js/sakura-app.js"></script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
-<script src="/js/botui.js"></script>
-<!-- 不蒜子 网页计数器 -->
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
-<script type="text/javascript">
-/* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-} else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-}
-/* ]]> */
-
-</script>
-<script>
-$(document).ready(function() {
-  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
-    if ($(".pattern-center").length > 0) { //有图的情况
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -400,
-          scrollSmoothOffset: -85
-      });
-    } else {
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -85,
-          scrollSmoothOffset: -85
-      });
-    }
-    var offsetTop = $('.toc').offset().top - 95;
-    window.onscroll = function() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= offsetTop) {
-        $('.toc').addClass('toc-fixed');
-      } else {
-        $('.toc').removeClass('toc-fixed');
-      }
-    }
-  }
-});
-</script>
-
-    <div class="openNav no-select" style="height: 50px;">
-      <div class="iconflat no-select" style="width: 50px; height: 50px;">
-        <div class="icon"></div>
-      </div>
-      <div class="site-branding search-form-submit">
-        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
-      </div>
     </div>
-  </section>
-  <div id="mo-nav" class="">
-  <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/CoderVon/CDN@master/img/custom/Rick.png">
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
   </div>
-  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">Von</p>
-  <p style="text-align: center; word-spacing: 20px;">
-    
-      
-        <a href="https://github.com/CoderVon" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
-      
-        <a href="https://weibo.com/2966707022/profile?topnav=1&wvr=6&is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
-      
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=569798719site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
-      
-    
-  </p>
-  <ul id="menu-new-1" class="menu">
-    
-      <li>
-        <a href="/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-            首页
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/archives">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-            归档
-          </span>
-        </a>
-        
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/categories/技术/">
-                  <i class="fa fa-code" aria-hidden="true"></i>
-                  技术
-                </a>
-              </li>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="/comment/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-            留言板
-          </span>
-        </a>
-        
-      </li>
-    
-  </ul>
-  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2020 Von</p>
-</div>
-<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<style>
-  .aplayer .aplayer-lrc {
-    height: 35px;
-  }
-  .aplayer .aplayer-lrc p{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px !important;
-  }
-  .aplayer .aplayer-lrc p.aplayer-lrc-current{
-    color: #FF1493;
-  }
-  .aplayer.aplayer-narrow .aplayer-body{
-    left: -66px !important;
-  }
-  .aplayer.aplayer-fixed .aplayer-lrc {
-    display: none;
-  }
-  .aplayer .aplayer-lrc.aplayer-lrc-hide {
-      display:none !important;
-  }
-  .aplayer.aplayer-fixed .lrc-show {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-  }
-</style>
-<meting-js
-
-    id="2660651585"
-
-    server="netease"
-
-    type="playlist"
-
-    fixed="true"
-
-    autoplay="false"
-
-    loop="all"
-
-    order="random"
-
-    preload="auto"
-
-    volume="0.7"
-
-    mutex="true"
-
-</meting-js>
-<script>
-  $(function(){
-    $('body').on('click', '.aplayer', function(){
-      if($('.aplayer-button').hasClass('aplayer-play')) {
-        $('.aplayer-lrc').removeClass('lrc-show');
-      } else {
-        $('.aplayer-lrc').addClass('lrc-show');
-      }
-    })
-  });
-</script>
 </body>
 </html>
